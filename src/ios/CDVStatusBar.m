@@ -442,7 +442,7 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
     if (isIOS7) {
         CGRect bounds = [[UIScreen mainScreen] bounds];
         bounds = [self invertFrameIfNeeded:bounds];
-        
+
         if (UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
             self.viewController.view.frame = bounds;
         }
